@@ -1,0 +1,26 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: your_email@gmail.com
+    password: your_password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+  thymeleaf:
+    enabled: true
+
+send:
+  email:
+    from: your_email@gmail.com
+    fromName: 'YourName'
+
+server:
+  port: 8082
